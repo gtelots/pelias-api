@@ -48,6 +48,8 @@
     "lodash": "^4.17.21",
     "markdown": "^0.5.0",
     "morgan": "^1.8.2",
+    "nodemon": "^3.1.0",
+    "open-location-code": "^1.0.3",
     "pelias-compare": "^0.1.16",
     "pelias-config": "^5.0.1",
     "pelias-labels": "^1.19.0",
