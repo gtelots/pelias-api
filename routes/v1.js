@@ -215,7 +215,8 @@ function addRoutes(app, peliasConfig) {
       sanitizers.search.middleware(peliasConfig.api),
       middleware.requestLanguage,
       middleware.sizeCalculator(),
-      controllers.libpostal(libpostalService, libpostalShouldExecute),
+      // @cong.pt
+      // controllers.libpostal(libpostalService, libpostalShouldExecute),
       controllers.placeholder(placeholderService, geometricFiltersApply, placeholderGeodisambiguationShouldExecute),
       controllers.placeholder(placeholderService, geometricFiltersApply, placeholderIdsLookupShouldExecute),
       // try 3 different query types: address search using ids, cascading fallback, pelias parser

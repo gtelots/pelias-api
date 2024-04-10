@@ -80,7 +80,9 @@ function _sanitize (raw, clean, req) {
     // parse text with pelias/parser
     clean.text = text;
     clean.parser = 'pelias';
-    clean.parsed_text = parse(tokenizer);
+    // clean.parsed_text = parse(tokenizer);
+    // @cong.pt
+    clean.parsed_text = { "subject":clean.text };
   }
 
   return messages;
