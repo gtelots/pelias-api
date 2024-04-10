@@ -1,0 +1,6 @@
+{
+    "restartable": "rs",
+    "watch": ["*.*"],
+    "ext": "js,mjs,cjs,json,md",
+    "exec": "node index.js"
+}
