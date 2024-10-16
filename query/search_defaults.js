@@ -23,11 +23,23 @@ module.exports = _.merge({}, peliasQuery.defaults, {
   'ngram:minimum_should_match': '1<-1 3<-25%',
 
   'match:main:analyzer': 'peliasQuery',
-  'match:main:field': 'phrase.default',
+  /**
+   * @author: cuong.hm
+   * @update: 2024-10-16
+   * @description: Change field from phrase.default to name.default
+   * @reason: Because currently, elasticsearch data only support search based on name.default field
+   */
+  'match:main:field': 'name.default',
   'match:main:minimum_should_match': '1<-1 3<-25%',
 
   'match_phrase:main:analyzer': 'peliasPhrase',
-  'match_phrase:main:field': 'phrase.default',
+  /**
+   * @author: cuong.hm
+   * @update: 2024-10-16
+   * @description: Change field from phrase.default to name.default
+   * @reason: Because currently, elasticsearch data only support search based on name.default field
+   */
+  'match_phrase:main:field': 'name.default',
   'match_phrase:main:boost': 1,
   'match_phrase:main:slop': 2,
 
